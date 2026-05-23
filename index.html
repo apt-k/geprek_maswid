@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geprek Mas Wid - Solusi Laper Dompet Hemat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md overflow-hidden">
+                    <img class="w-full h-full object-cover" src="asset/logo.jpeg" alt="Logo">
+                </div>
+                <span class="text-xl font-extrabold text-red-600 tracking-wide">GEPREK Mas Wid</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-600">
+                <a href="#home" class="hover:text-red-600 transition">Home</a>
+                <a href="#terlaris" class="hover:text-red-600 transition">Menu</a>
+                <a href="#lokasi" class="hover:text-red-600 transition">Lokasi</a>
+            </nav>
+            
+            <button id="menu-btn" class="md:hidden flex flex-col justify-between w-6 h-5 text-gray-600 focus:outline-none" aria-label="Main Menu">
+                <span class="w-full h-0.5 bg-current rounded-full transition-all duration-300"></span>
+                <span class="w-full h-0.5 bg-current rounded-full transition-all duration-300"></span>
+                <span class="w-full h-full max-h-[2px] bg-current rounded-full transition-all duration-300"></span>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute top-full left-0 w-full shadow-lg transition-all">
+            <nav class="flex flex-col p-4 space-y-3 font-semibold text-gray-600">
+                <a href="#home" class="mobile-link hover:text-red-600 transition py-2 px-4 hover:bg-gray-50 rounded-xl">Home</a>
+                <a href="#terlaris" class="mobile-link hover:text-red-600 transition py-2 px-4 hover:bg-gray-50 rounded-xl">Menu</a>
+                <a href="#lokasi" class="mobile-link hover:text-red-600 transition py-2 px-4 hover:bg-gray-50 rounded-xl">Lokasi</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="max-w-6xl mx-auto px-4 py-12 md:py-20 flex flex-col-reverse md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <div class="space-y-2">
+                <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+                    Jangan Beli Ayam Geprek Di Sebelah
+                </h1>
+                <p class="text-sm md:text-base text-gray-500 italic font-medium">
+                    (karena sebelah nggak jualan ayam geprek)
+                </p>
+            </div>
+            
+            <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+                Laper parah tapi dompet lagi mode hemat? Tenang, <span class="font-semibold text-red-600">Ayam Geprek Mas Wid</span> solusinya. 
+                Kamu bisa nikmati porsi ngenyangin yang ramah di kantong, lengkap dengan Sambal racikan khas yang pedasnya bikin melek. 
+                Nggak perlu drama nunggu lama sampai <span class="italic">bad mood</span>, karena pesananmu disiapkan <span class="italic font-semibold">sat-set</span> dan langsung siap santap.
+            </p>
+            
+            <p class="font-bold text-gray-950 text-lg">
+                Tunggu apa lagi? Yuk, pesan porsimu sekarang!
+            </p>
+
+            <div class="pt-4">
+                <a href="https://wa.me/+6285743632328" target="_blank" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-red-600/30 transform hover:-translate-y-0.5 transition text-lg tracking-wide">
+                    Pesen Sak Iki!
+                </a>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full max-w-md md:max-w-none">
+            <div>
+                <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition"></div>
+                <img src="asset/hero.jpeg" alt="Gambar Ayam Geprek Mas Wid" class="w-full h-full object-cover rounded-3xl shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-200 my-4 max-w-6xl mx-auto">
+
+    <section id="terlaris" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center md:text-left mb-10">
+            <h2 class="text-3xl font-extrabold text-gray-900 inline-block border-b-4 border-red-600 pb-2">
+                Terlaris
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 text-center hover:shadow-xl transition">
+                <div class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex flex-col items-center justify-center text-gray-400 border-2 border-dashed border-gray-200">
+                    <img src="asset/bakar.jpeg" alt="Gambar Menu 1" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <h3 class="font-bold text-lg text-gray-800">Ayam Geprek Bakar</h3>
+                <p class="text-sm text-gray-500 mt-1">Digeprek brutal, dibumbui spesial, terus di-toast biar dapet efek smoky yang menggoda. Wanginya bikin tetangga sebelah ikutan laper!</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 text-center hover:shadow-xl transition">
+                <div class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex flex-col items-center justify-center text-gray-400 border-2 border-dashed border-gray-200">
+                    <img src="asset/geprek.jpeg" alt="Gambar Menu 2" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <h3 class="font-bold text-lg text-gray-800">Ayam Geprek</h3>
+                <p class="text-sm text-gray-500 mt-1">Ayam krispi digeprek hancur bersama cabai asli pilihan. Pedasnya beneran, krispinya dapet, bukan cuma janji manis kayak mantan.</p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100 text-center hover:shadow-xl transition">
+                <div class="w-full aspect-square bg-gray-100 rounded-xl mb-4 flex flex-col items-center justify-center text-gray-400 border-2 border-dashed border-gray-200">
+                    <img src="asset/kentucky.jpeg" alt="Gambar Menu 3" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <h3 class="font-bold text-lg text-gray-800">Ayam Kentucky</h3>
+                <p class="text-sm text-gray-500 mt-1">Bebas pilih bagian favoritmu dari dada, paha, sampai sayap. Kulitnya krispi kriuk parah, dagingnya juicy, porsinya anti-pelit!</p>
+            </div>
+        </div>
+    </section>
+    <hr class="border-gray-200 my-4 max-w-6xl mx-auto">
+
+    <section class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 inline-block border-b-4 border-red-600 pb-2">
+                Testimoni
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 relative">
+                <span class="text-red-500 text-4xl absolute -top-4 left-4 bg-white px-2">“</span>
+                <p class="text-gray-600 italic pt-2">"Gepreknya beneran sat-set pas laper melanda! Sambalnya nampol bikin nagih, pas banget di kantong mahasiswa."</p>
+                <div class="mt-4 font-bold text-sm text-gray-800">- Mawar</div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 relative">
+                <span class="text-red-500 text-4xl absolute -top-4 left-4 bg-white px-2">“</span>
+                <p class="text-gray-600 italic pt-2">"Awalnya ketawa liat taglinenya, pas dicoba emang beneran enak. Gak nyesel langganan di Mas Wid!"</p>
+                <div class="mt-4 font-bold text-sm text-gray-800">- Pak Bagus</div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200/80 relative">
+                <span class="text-red-500 text-4xl absolute -top-4 left-4 bg-white px-2">“</span>
+                <p class="text-gray-600 italic pt-2">"Porsinya ngenyangin banget, ayamnya krispi dan bumbunya meresap. Sukses terus Mas Wid!"</p>
+                <div class="mt-4 font-bold text-sm text-gray-800">- Arwan</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-200 my-4 max-w-6xl mx-auto">
+
+    <section id="lokasi" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center md:text-left mb-10">
+            <h2 class="text-3xl font-extrabold text-gray-900 inline-block border-b-4 border-red-600 pb-2">
+                Langsung Saja Gas ke Lokasi
+            </h2>
+        </div>
+        <div class="flex flex-col md:flex-row gap-8 items-stretch">
+            <div class="flex-1 min-h-[300px] bg-emerald-50 border-2 border-dashed border-emerald-300 rounded-3xl flex flex-col items-center justify-center text-emerald-700 p-6 text-center">
+                
+            </div>
+            
+            <div class="md:w-1/3 bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-center space-y-6">
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Alamat</h4>
+                    <p class="text-gray-700 font-semibold leading-relaxed">
+                        Cinderejo RT.01/RW.02, Jatisari, Jatisrono, Wonogiri, Jawa Tengah, Indonesia
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">No. Telepon / WhatsApp</h4>
+                    <a href="tel:+628123456789" class="text-red-600 font-bold text-lg hover:underline block">
+                        +62 812-3456-789
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 mt-12 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <p class="text-white font-extrabold text-lg tracking-wide">GEPREK Mas Wid</p>
+                <p class="text-xs text-gray-500 mt-1">&copy; 2023 Ayam Geprek Mas Wid.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com/geprek.maswid?igsh=d3ZpMmp1aXRrMnR0" target="_blank" class="hover:text-white transition font-medium">Instagram</a>
+                <a href="https://www.tiktok.com/@geprek.maswid" target="_blank" class="hover:text-white transition font-medium">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        // Fungsi buka/tutup mobile menu saat burger diklik
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fungsi agar menu otomatis tertutup saat salah satu link diklik
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
