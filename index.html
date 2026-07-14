@@ -235,6 +235,55 @@
             });
         });
     </script>
+    <!-- STRUKTUR MODAL/POPUP ARTIKEL -->
+<div id="modal-artikel" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4 transition-all duration-300">
+    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl transform scale-95 transition-all relative">
+        
+        <!-- Tombol Close Silang -->
+        <button onclick="tutupArtikel()" class="absolute top-4 right-4 bg-black/40 hover:bg-black/60 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold z-10 transition">✕</button>
+        
+        <!-- Gambar Artikel Utama -->
+        <div class="w-full h-52 bg-gray-100">
+            <img src="asset/geprek.jpeg" alt="Gambar Artikel" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Konten Artikel Singkat -->
+        <div class="p-6 space-y-3">
+            <span class="text-xs font-bold text-red-600 uppercase tracking-wide">Tips & Trik</span>
+            <h3 class="text-xl font-extrabold text-gray-900">Rahasia Makan Pedas Tapi Tetap Aman di Lambung</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+                Suka pedasnya Ayam Geprek Mas Wid tapi takut perut melilit? Kuncinya adalah jangan kosongkan lambung sebelum makan, serta siapkan segelas es susu atau teh hangat sebagai penetralisir alami capsican cabai!
+            </p>
+            <div class="pt-2">
+                <button onclick="tutupArtikel()" class="w-full bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 rounded-xl transition text-sm">
+                    Oke, Paham Mas Wid!
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- SCRIPT JAVASCRIPT UNTUK AKSI POPUP -->
+<script>
+    function bukaArtikel() {
+        const modal = document.getElementById('modal-artikel');
+        modal.classList.remove('hidden');
+        // Sedikit delay agar efek transisi smooth saat muncul
+        setTimeout(() => {
+            modal.firstElementChild.classList.remove('scale-95');
+            modal.firstElementChild.classList.add('scale-100');
+        }, 10);
+    }
+
+    function tutupArtikel() {
+        const modal = document.getElementById('modal-artikel');
+        modal.firstElementChild.classList.remove('scale-100');
+        modal.firstElementChild.classList.add('scale-95');
+        setTimeout(() => {
+            modal.add('hidden');
+        }, 200);
+        modal.classList.add('hidden');
+    }
+</script>
 </body>
 </html>
